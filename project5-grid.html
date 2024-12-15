@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Example</title>
+  <style>
+   
+    
+    .grid-container {
+      display: grid;
+      grid-gap: 10px;
+      padding: 20px;
+    }
+
+    .grid-container div {
+      background-color: #49a6e9;
+      color: white;
+      padding: 10px;
+      height: 50px;
+      border-radius: 5px;
+    }
+ 
+    .row-2 {
+        
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+
+
+    .row-3 { 
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+   }
+
+    .row-4 { 
+        grid-template-columns: repeat(4, 1fr); 
+        text-align: center;
+    }
+
+    .row-5 { 
+        grid-template-columns: repeat(5, 1fr);
+        text-align: center;
+    }
+
+    .row-6 { 
+        grid-template-columns: repeat(6, 1fr); 
+        text-align: center;
+    }
+
+       h2 {
+        background-color: #49a6e9;
+       color: white;
+       padding: 10px;
+       border-radius: 5px;
+       text-align: center;
+       height: 50px;
+     }
+
+     p{
+       background-color: #49a6e9;
+       color: white;
+       padding: 10px;
+       border-radius: 5px;
+       text-align: center;
+       height: 50px;
+     }
+
+    </style>
+</head>
+
+<body>
+  <h2>60 GS is starter kit for the CSS Grid.</h2>
+
+  <div class="grid-container row-2">
+    <div>1</div>
+    <div>2</div>
+  </div>
+
+  <div class="grid-container row-3">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+
+  <div class="grid-container row-4">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+
+  <div class="grid-container row-5">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+  </div>
+
+  <div class="grid-container row-6">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </div>
+
+  <p>Why 60? <br> Because the number 60 is dividable by 2, 3, 4, 5, and 6.</p>
+</body>
+</html>

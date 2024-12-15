@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <style>
+            .color{
+                background-color: rgb(216, 212, 212);
+                height: 1000px;
+            }
+            .photo {
+             display: grid;
+             grid-template-columns: repeat(10, 110px);
+             grid-template-rows: repeat(10, 100px);
+             gap: 10px;
+             column-gap: 10px;
+             row-gap: 27px;
+             height: 550px;
+
+            }
+
+
+            .orange{
+                width: 720px;
+                grid-area :  1 / 1 / 9 / 8;
+               
+            }
+
+          
+            .green{
+                width: 350px;
+                height: 250px;
+                grid-area: 1 / 7 / 8 / 7;
+     }
+
+           .blue{
+            width: 350px;
+    height: 250px;
+    grid-area: 1 / 10 / 30 / 10;
+
+           } 
+             
+        .black{
+            width: 360px;
+            height: 260px;
+             grid-area: 3 / 7 / 7 / 20;
+
+             }
+             
+        .red{
+            width: 360px;
+            height: 250px;
+             grid-area: 3 / 10 / 7 / 18;
+            }
+             .text{
+                display: grid;
+                grid-template-columns: repeat(5, 150px);
+                column-gap: 150px;
+                width: 250px;
+           
+          
+               
+                 }
+            
+          .text div{
+            display: grid;
+            width: 250px;
+           
+            align-self: center;
+            align-items: center;
+          }
+          .pink{
+            position: relative;
+           top:10px
+          }
+          .img1{
+            position: relative;
+            top:10px
+          }  
+          
+          </style>
+    </head>
+    <body>
+         <div class="color">
+        <div class="photo">
+         <div class="orange"><img src="1.png"></div>
+         <div class="green"><img src="2.png"></div>
+         <div class="blue"><img src="3.png"></div>
+         <div class="black"><img src="4.png"></div>
+         <div class="red"><img src="5.png"></div>
+        </div>
+        
+         <div class="text">
+            <div class="pink" style="background-color: orange; " > <img src="ORANG.png" alt="img1">Mobile offers</div>
+            <div class="earth" style="background-color:white;"><img src="EARTH.png">Internet Offers</div>
+            <div class="whatsh" style="background-color:white;"><img src="WHATSH.png">Devices</div>
+            <div class="plane" style="background-color:white;"><img src="PLAN.png">International & Roaming</div>
+            <div class="phon" style="background-color:white;"><img src="PHON.png">Fixed Lines</div>
+
+
+         </div>
+
+
+
+
+
+        </div>
+     </body>
+</html>

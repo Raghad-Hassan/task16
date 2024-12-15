@@ -1,0 +1,292 @@
+body{
+    background-color: #1B203D;
+    
+    display: flex;
+    direction: rtl; /* Sets right-to-left layout */
+    gap: 10px;
+}
+
+body,html {
+    height: 100%;
+}
+
+.right {
+    width: 75%;
+    display: flex; /* Enables flexbox for layout control */
+    justify-content: space-between; /* Spaces child elements to opposite ends */
+    align-items: center; /* Vertically centers child elements */
+    margin-right: 10px;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 100px;
+
+    height: 80%;
+
+}
+
+.header{
+    
+    display: flex; /* Arrange profile and dashboard horizontally */
+    justify-content: space-between; /* Push profile to the right and dashboard to the left */
+    align-items: center; /* Vertically align profile and dashboard */
+    width: 100%; /* Ensure the header spans the full width */
+}
+.profile {
+    display: flex
+    ;
+        flex-direction: row;
+        align-items: center;
+        gap: 3px;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column; /* Stack name and position vertically */
+    align-items: flex-end; /* Align text to the right */
+}
+
+.profile h4 {
+    margin: 0;
+    color: white;
+    font-size: 18px; /* Adjust font size if needed */
+}
+
+.profile p {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+}
+
+
+.profile img {
+    border-radius: 50%;
+    height: 50px;
+    position: relative;
+    right: 7%;
+}
+
+
+
+.position {
+    /* position: absolute; */
+    top: 5%;
+}
+
+.dashboard {
+    gap: 10px;
+    display: flex
+;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    flex-direction: row-reverse;
+
+}
+
+.menu div{
+    /* display: flex; */
+    width: 35px;
+    height: 5px;
+    background-color: white
+    ;
+    margin: 6px 0;
+}
+
+.profileInfo{
+
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    
+}
+.profileInfo div{
+    background-color: #272C4A;
+    width: 25%;
+    height: 85px;
+}
+
+
+
+.tasks, .orders, .projects, .customers{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tasks img, .orders img, .projects img{
+    width: 70px;
+
+}
+
+
+
+.text{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text h3{
+    margin: 0;
+    color: white;
+    font-size: 18px; /* Adjust font size if needed */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.text p{
+    margin: 0;
+    font-size: 14px;
+    color: white;
+}
+
+
+
+
+
+.customers img{
+    width: 50px;
+
+}
+
+.stats{
+    display: flex;
+    
+    width: 100%;
+    gap: 15px;
+    
+}
+
+.sales{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: #272C4A ;
+    height: 240px;
+
+}
+
+.textStats{
+    display: flex;
+   
+    background-color: #272C4A ;
+    justify-content: space-around;
+}
+
+.sales .p1{
+    color: #ce4f39;
+    background-color: #DAE1DA ;
+    width: 60px;
+    text-align: center;
+
+}
+
+.sales .p2{
+    color: #ce4f39;
+    
+
+}
+
+.imgStats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sales img{
+    width: 120px;
+    
+
+}
+
+.topSelling{
+    display: flex;
+    background-color: #272C4A ;
+    width: 70%;
+    flex-direction: column;
+    
+    
+}
+
+.textTopSelling{
+    display: flex;
+   
+    background-color: #272C4A ;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.topSelling .p1{
+    color: #ce4f39;
+    background-color: #DAE1DA ;
+    width: 60px;
+    text-align: center;
+    height: fit-content;
+
+}
+
+.topSelling .p2{
+    color: #ce4f39;
+    
+
+}
+
+.topSelling table{
+    color: white;
+    direction: ltr;
+    
+}
+
+.topSelling td{
+    text-align: center;
+}
+.topSelling th,td{
+    border-bottom: 0.3px solid white;
+    border-collapse: collapse;
+}
+
+/* leftSide style */
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: #272C4A;
+    gap: 20px;
+    height: 100%;
+}
+
+.left a{
+    text-align: center;
+}
+
+.mainMenu{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainMenu p{
+    color: white;
+}
+
+.mainMenu img{
+    width: 30px;
+    height: 35px;
+
+}
+
+.mainMenu .projects{
+    width: 45px;
+}
+
+.left div, .mainMenu:hover{
+    background-color: #1B203D;
+}
